@@ -4,7 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/widget/drawer/drawerNavigation.dart';
 
-class HomeScreen extends StatelessWidget {
+class AccountScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
       drawer: drawerNavigation(),
       appBar: AppBar(
         title: Center(
-          child: Text("Home"),
+          child: Text("Account"),
         ),
       ),
     );
