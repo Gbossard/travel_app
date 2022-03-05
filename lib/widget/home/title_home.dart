@@ -1,5 +1,5 @@
 ///
-/// widget/home/titleHome.dart
+/// widget/home/title_home.dart
 ///
 import 'package:flutter/material.dart';
 import 'package:travel_app/theme.dart';

@@ -1,5 +1,5 @@
 ///
-/// model/navItem.dart
+/// model/nav_item.dart
 ///
 enum NavigationItem {
   home,

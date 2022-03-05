@@ -3,9 +3,9 @@
 ///
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:travel_app/provider/navigationProvider.dart';
+import 'package:travel_app/provider/navigation_provider.dart';
 import 'package:travel_app/screen/home.dart';
-import 'package:travel_app/screen/mainPage.dart';
+import 'package:travel_app/screen/main_page.dart';
 
 void main() {
   runApp(MyApp());

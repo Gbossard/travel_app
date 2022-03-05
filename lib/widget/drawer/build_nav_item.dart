@@ -3,8 +3,8 @@
 ///
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:travel_app/model/navItem.dart';
-import 'package:travel_app/provider/navigationProvider.dart';
+import 'package:travel_app/model/nav_item.dart';
+import 'package:travel_app/provider/navigation_provider.dart';
 import 'package:travel_app/theme.dart';
 
 Widget buildNavItem(

@@ -1,7 +1,7 @@
-import 'package:travel_app/model/navItem.dart';
+import 'package:travel_app/model/nav_item.dart';
 
 ///
-/// provider/navigationProvider.dart
+/// provider/navigation_provider.dart
 ///
 import 'package:flutter/material.dart';
 

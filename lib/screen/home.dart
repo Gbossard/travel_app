@@ -2,9 +2,10 @@
 /// screen/home.dart
 ///
 import 'package:flutter/material.dart';
-import 'package:travel_app/widget/drawer/drawerNavigation.dart';
-import 'package:travel_app/widget/home/headerHome.dart';
-import 'package:travel_app/widget/home/titleHome.dart';
+import 'package:travel_app/widget/drawer/drawer_navigation.dart';
+import 'package:travel_app/widget/home/header_home.dart';
+import 'package:travel_app/widget/home/tab_bar_home.dart';
+import 'package:travel_app/widget/home/title_home.dart';
 
 import '../theme.dart';
 
@@ -32,6 +33,7 @@ class HomeScreen extends StatelessWidget {
             children: <Widget>[
               headerHome(context),
               titleHome(),
+              tabBarHome()
             ],
           ),
         ),

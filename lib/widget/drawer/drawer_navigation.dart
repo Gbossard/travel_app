@@ -2,11 +2,11 @@
 /// widget/drawer/drawerNavigation.dart
 ///
 import 'package:flutter/material.dart';
-import 'package:travel_app/model/navItem.dart';
+import 'package:travel_app/model/nav_item.dart';
 import 'package:travel_app/screen/account.dart';
 import 'package:travel_app/theme.dart';
-import 'package:travel_app/widget/drawer/navHeader.dart';
-import 'package:travel_app/widget/drawer/buildNavItem.dart';
+import 'package:travel_app/widget/drawer/nav_header.dart';
+import 'package:travel_app/widget/drawer/build_nav_item.dart';
 import 'package:travel_app/screen/home.dart';
 
 class drawerNavigationWidget extends StatefulWidget {
