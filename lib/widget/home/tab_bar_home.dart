@@ -8,11 +8,11 @@ import 'package:travel_app/widget/home/tab_custom_indicator.dart';
 Widget tabBarHome() {
   return Container(
     height: 30,
-    margin: EdgeInsets.only(top: 30, left: 15),
+    margin: EdgeInsets.only(top: 30, left: 5),
     child: DefaultTabController(
       length: 4,
       child: TabBar(
-        labelPadding: EdgeInsets.only(left: 15, right: 15),
+        labelPadding: EdgeInsets.only(left: 10, right: 10),
         indicatorPadding: EdgeInsets.only(left: 15, right: 15),
         isScrollable: true,
         labelColor: pacificBlue,
