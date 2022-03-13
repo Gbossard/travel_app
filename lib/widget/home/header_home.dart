@@ -3,7 +3,6 @@
 ///
 import 'package:flutter/material.dart';
 import 'package:travel_app/screen/account.dart';
-import 'package:travel_app/widget/drawer/drawer_navigation.dart';
 import 'package:travel_app/theme.dart';
 
 Widget headerHome(BuildContext context) {
@@ -35,11 +34,9 @@ Widget headerHome(BuildContext context) {
                 backgroundColor: Colors.teal,
               ),
             ),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => AccountScreen(drawerItem: widget_drawerItems[_selectedIndex])));
-            },
+            onPressed: () { 
+              Navigator.of(context).pop(AccountScreen());
+            }
           ),
         ),
       ],

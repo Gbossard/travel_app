@@ -2,12 +2,11 @@
 /// screen/account.dart
 ///
 import 'package:flutter/material.dart';
-import 'package:travel_app/widget/drawer/navigation_drawer.dart';
+import 'package:travel_app/widget/home/header_home.dart';
 
 class AccountScreen extends StatefulWidget {
-  final DrawerItem drawerItem;
 
-  AccountScreen({Key? key, required this.drawerItem}) : super(key: key);
+  AccountScreen({Key? key}) : super(key: key);
 
   @override
   State<AccountScreen> createState() => _AccountScreenState();
@@ -16,12 +15,12 @@ class AccountScreen extends StatefulWidget {
 class _AccountScreenState extends State<AccountScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      
-      appBar: AppBar(
-        title: Center(
-          child: Text("Account"),
-        ),
+    return Container(
+      child: ListView(
+        physics: BouncingScrollPhysics(),
+        children: <Widget>[
+          headerHome(context),
+        ],
       ),
     );
   }
