@@ -8,7 +8,7 @@ import 'package:travel_app/theme.dart';
 
 Widget imageStack(String urlImage, String titleImage) {
   return Container(
-    margin: EdgeInsets.only(right: 60),
+    margin: EdgeInsets.only(right: 20),
     width: 333,
     height: 210,
     decoration: BoxDecoration(

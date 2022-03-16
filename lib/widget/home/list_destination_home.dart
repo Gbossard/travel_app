@@ -21,23 +21,27 @@ Widget listDestination() {
         if (snapshot.hasData) {
           List<AirtableDataDestination>? values = snapshot.data;
           return Container(
-            width: 1200,
+            margin: EdgeInsets.only(left: 15),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                ListView(
-                  primary: false,
-                  physics: BouncingScrollPhysics(),
-                  controller: _pageController,
-                  scrollDirection: Axis.horizontal,
-                  children: values!
-                    .map(
-                      (AirtableDataDestination value) => ListTile(
-                        title: imageStack(value.cover, value.name)),
-                    )
-                    .toList(),
+                SizedBox(
+                  height: 220,
+                  child: ListView(
+                    primary: false,
+                    physics: BouncingScrollPhysics(),
+                    controller: _pageController,
+                    scrollDirection: Axis.horizontal,
+                    children: values!
+                      .map(
+                        (AirtableDataDestination value) => Container(
+                          child: imageStack(value.cover, value.name)),
+                      )
+                      .toList(),
+                  ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 30, top: 30),
+                  padding: EdgeInsets.only( top: 30),
                   child: SmoothPageIndicator(
                     controller: _pageController,
                     count: values.length,
