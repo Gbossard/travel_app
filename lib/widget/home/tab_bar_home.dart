@@ -8,7 +8,7 @@ import 'package:travel_app/widget/home/tab_custom_indicator.dart';
 Widget tabBarHome() {
   return Container(
     height: 30,
-    margin: EdgeInsets.only(top: 30, left: 5),
+    margin: EdgeInsets.only(top: 30, left: 5, bottom: 15),
     child: DefaultTabController(
       length: 4,
       child: TabBar(
