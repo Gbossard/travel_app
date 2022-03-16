@@ -27,7 +27,7 @@ Widget profilAccount() {
                           child: CircleAvatar(
                             backgroundImage: NetworkImage(value.image),
                             maxRadius: 50,
-                            backgroundColor: Colors.teal,
+                            backgroundColor: cyanLight,
                           ),
                         ),
                         Padding(
