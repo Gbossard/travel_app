@@ -12,19 +12,23 @@ class AirtableDataDestination {
   String id;
   String createdTime;
   String name;
-  String country;
-  String description;
-  String category;
-  List<String> images;
+  // String country;
+  // String description;
+  // String category;
+  String cover;
+  // List<String> images;
+  // String type;
  
   AirtableDataDestination({
     required this.id,
     required this.createdTime,
     required this.name,
-    required this.country,
-    required this.description,
-    required this.category,
-    required this.images,
+    // required this.country,
+    // required this.description,
+    // required this.category,
+    required this.cover,
+    // required this.images,
+    // required this.type,
   });
 }
  
@@ -60,14 +64,17 @@ class AirtableData {
               id: value['id'],
               createdTime: value['createdTime'],
               name: value['fields']['name'],
-              country: value['fields']['country'],
-              description: value['fields']['description'],
-              category: value['fields']['category'],
-              images: imageList,
+              // country: value['fields']['country'],
+              // description: value['fields']['description'],
+              // category: value['fields']['category'],
+              cover: value['fields']['cover'][0]['url'],
+              // images: imageList,
+              // type: value['fields']['type'],
             ),
           );
         }
       );
+      
       return values;
     } else {
       throw "ERROR !!!!!";

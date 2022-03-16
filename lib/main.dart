@@ -2,9 +2,9 @@
 /// main.dart
 ///
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:travel_app/provider/Navigation_provider.dart';
 import 'package:travel_app/screen/menu.dart';
-import 'package:travel_app/screen/home.dart';
-import 'package:travel_app/widget/drawer/navigation_drawer.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,10 +18,13 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Liberty Travel',
-      home: MenuScreen(),
+    return ChangeNotifierProvider(
+      create: (context) => Navigation(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Liberty Travel',
+        home: MenuScreen(),
+      ),
     );
   }
 }

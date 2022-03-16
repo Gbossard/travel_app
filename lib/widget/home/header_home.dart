@@ -2,10 +2,12 @@
 /// widget/home/header_home.dart
 ///
 import 'package:flutter/material.dart';
-import 'package:travel_app/screen/account.dart';
+import 'package:provider/provider.dart';
+import 'package:travel_app/provider/Navigation_provider.dart';
 import 'package:travel_app/theme.dart';
 
-Widget headerHome(BuildContext context) {
+Widget headerHome(BuildContext context, bool isAvatar) {
+  Navigation _navItem = Provider.of<Navigation>(context, listen: false);
   return Container(
     height: 50,
     margin: EdgeInsets.only(top: 15, left: 15, right: 15),
@@ -25,6 +27,7 @@ Widget headerHome(BuildContext context) {
             ),
           ),
         ),
+        if (isAvatar == true)
         Container(
           child: IconButton(
             icon: Center(
@@ -35,7 +38,8 @@ Widget headerHome(BuildContext context) {
               ),
             ),
             onPressed: () { 
-              Navigator.of(context).pop(AccountScreen());
+              // Navigator.of(context).pop(AccountScreen());
+              // Navigator.of(context).push(MaterialPageRoute(builder: (context) => _navItem._onSelectItem(1)));
             }
           ),
         ),

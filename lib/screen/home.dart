@@ -3,6 +3,7 @@
 ///
 import 'package:flutter/material.dart';
 import 'package:travel_app/widget/home/header_home.dart';
+import 'package:travel_app/widget/home/list_destination_home.dart';
 import 'package:travel_app/widget/home/tab_bar_home.dart';
 import 'package:travel_app/widget/home/title_home.dart';
 
@@ -21,9 +22,10 @@ class _HomeScreenState extends State<HomeScreen> {
       child: ListView(
         physics: BouncingScrollPhysics(),
         children: <Widget>[
-          headerHome(context),
+          headerHome(context, true),
           titleHome(),
-          tabBarHome()
+          tabBarHome(),
+          listDestination()
         ],
       ),
     );
