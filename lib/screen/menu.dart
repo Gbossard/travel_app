@@ -4,7 +4,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/global.dart';
 import 'package:travel_app/model/drawer_items.dart';
-import 'package:travel_app/provider/navigation_provider.dart';
 import 'package:travel_app/screen/account.dart';
 import 'package:travel_app/screen/home.dart';
 import 'package:travel_app/theme.dart';
