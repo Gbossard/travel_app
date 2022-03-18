@@ -2,7 +2,9 @@
 /// screen/menu.dart
 ///
 import 'package:flutter/material.dart';
+import 'package:travel_app/global.dart';
 import 'package:travel_app/model/drawer_items.dart';
+import 'package:travel_app/provider/navigation_provider.dart';
 import 'package:travel_app/screen/account.dart';
 import 'package:travel_app/screen/home.dart';
 import 'package:travel_app/theme.dart';
@@ -35,8 +37,17 @@ class _MenuScreenState extends State<MenuScreen> {
   }
 
   _onSelectItem(int index) {
-    setState(() => _selectedIndex = index);
+    navigationProvider.setIndex(index);
     Navigator.of(context).pop(); // close the drawer
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _selectedIndex = navigationProvider.getSelectedIndex;
+    navigationProvider.addListener(() {
+      setState(() => _selectedIndex = navigationProvider.getSelectedIndex);
+    });
   }
 
   @override

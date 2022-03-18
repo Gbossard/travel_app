@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => Navigation(),
+      create: (context) => NavigationProvider(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Liberty Travel',

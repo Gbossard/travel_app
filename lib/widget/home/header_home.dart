@@ -3,6 +3,7 @@
 ///
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:travel_app/global.dart';
 import 'package:travel_app/provider/Navigation_provider.dart';
 import 'package:travel_app/theme.dart';
 
@@ -37,9 +38,8 @@ Widget headerHome(BuildContext context, bool isAvatar) {
                 backgroundColor: Colors.teal,
               ),
             ),
-            onPressed: () { 
-              // Navigator.of(context).pop(AccountScreen());
-              // Navigator.of(context).push(MaterialPageRoute(builder: (context) => _navItem._onSelectItem(1)));
+            onPressed: () {
+              navigationProvider.setIndex(1);
             }
           ),
         ),
