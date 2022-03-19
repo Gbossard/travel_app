@@ -139,7 +139,7 @@ class _DestinationDetailState extends State<DestinationDetail> {
                         GestureDetector(
                           onTap: () {
                             Navigator.of(context).pop();
-                            navigationProvider.setIndex(3);
+                            navigationProvider.setIndex(2);
                           },
                           child: Container(
                             height: 45,

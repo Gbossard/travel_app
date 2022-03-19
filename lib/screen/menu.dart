@@ -32,11 +32,11 @@ class _MenuScreenState extends State<MenuScreen> {
     switch (pos) {
       case 0:
         return new HomeScreen();
-      case 2:
+      case 1:
         return new ListDestinationScreen();
-      case 3:
+      case 2:
         return new MapDestinationScreen();
-      case 4:
+      case 3:
         return new AccountScreen();
       default:
         return new Text("Error While");

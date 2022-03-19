@@ -1,5 +1,5 @@
 ///
-/// screen/destination_detail.dart
+/// screen/map_destination.dart
 ///
 import 'package:flutter/material.dart';
 import 'package:travel_app/widget/home/header_home.dart';

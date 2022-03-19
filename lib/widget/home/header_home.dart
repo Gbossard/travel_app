@@ -39,7 +39,7 @@ Widget headerHome(BuildContext context, bool isAvatar) {
               ),
             ),
             onPressed: () {
-              navigationProvider.setIndex(4);
+              navigationProvider.setIndex(3);
             }
           ),
         ),
