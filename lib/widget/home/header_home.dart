@@ -8,7 +8,7 @@ import 'package:travel_app/provider/Navigation_provider.dart';
 import 'package:travel_app/theme.dart';
 
 Widget headerHome(BuildContext context, bool isAvatar) {
-  Navigation _navItem = Provider.of<Navigation>(context, listen: false);
+  NavigationProvider _navItem = Provider.of<NavigationProvider>(context, listen: false);
   return Container(
     height: 50,
     margin: EdgeInsets.only(top: 15, left: 15, right: 15),
@@ -39,7 +39,7 @@ Widget headerHome(BuildContext context, bool isAvatar) {
               ),
             ),
             onPressed: () {
-              navigationProvider.setIndex(1);
+              navigationProvider.setIndex(4);
             }
           ),
         ),

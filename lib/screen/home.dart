@@ -4,6 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/widget/home/header_home.dart';
 import 'package:travel_app/widget/home/list_destination_home.dart';
+import 'package:travel_app/widget/home/text_home.dart';
 import 'package:travel_app/widget/home/title_home.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -23,6 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: <Widget>[
           headerHome(context, true),
           titleHome(),
+          textHome(),
           listDestination()
         ],
       ),

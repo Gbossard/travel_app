@@ -6,6 +6,8 @@ import 'package:travel_app/global.dart';
 import 'package:travel_app/model/drawer_items.dart';
 import 'package:travel_app/screen/account.dart';
 import 'package:travel_app/screen/home.dart';
+import 'package:travel_app/screen/list_destination.dart';
+import 'package:travel_app/screen/map_destination.dart';
 import 'package:travel_app/theme.dart';
 import 'package:travel_app/widget/drawer/navigation_drawer.dart';
 
@@ -19,6 +21,8 @@ class MenuScreen extends StatefulWidget {
 class _MenuScreenState extends State<MenuScreen> {
   final _drawerItems = [
     new DrawerItem("Home", Icons.home),
+    new DrawerItem("Destinations", Icons.flight),
+    new DrawerItem("Map", Icons.room),
     new DrawerItem("My Account", Icons.person),
   ];
 
@@ -28,7 +32,11 @@ class _MenuScreenState extends State<MenuScreen> {
     switch (pos) {
       case 0:
         return new HomeScreen();
-      case 1:
+      case 2:
+        return new ListDestinationScreen();
+      case 3:
+        return new MapDestinationScreen();
+      case 4:
         return new AccountScreen();
       default:
         return new Text("Error While");

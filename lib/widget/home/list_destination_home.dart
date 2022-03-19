@@ -37,13 +37,13 @@ Widget listDestination() {
                       .map(
                         (AirtableDataDestination value) => Container(
                           margin: EdgeInsets.only(left: 15),
-                          child: imageStack(value.cover, value.name)),
+                          child: imageStack(context, value)),
                       )
                       .toList(),
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 15),
+                  margin: EdgeInsets.only(left: 15, bottom: 30),
                   child: Padding(
                     padding: EdgeInsets.only( top: 30),
                     child: SmoothPageIndicator(
