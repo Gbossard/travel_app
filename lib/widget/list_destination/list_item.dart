@@ -10,7 +10,7 @@ Widget listItem(BuildContext context) {
   final AirtableData airtableData = AirtableData();
 
   return Container(
-    padding: EdgeInsets.only(top: 15),
+    padding: EdgeInsets.only(top: 5),
     child: FutureBuilder(
       future: airtableData.getDestination(),
       builder: (BuildContext context,
@@ -22,7 +22,7 @@ Widget listItem(BuildContext context) {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(left: 15),
+                  padding: EdgeInsets.only(left: 15, bottom: 10),
                   child: Text(
                     "Découvrez les destinations",
                     style: TextStyle(

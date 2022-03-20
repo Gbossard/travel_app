@@ -2,7 +2,6 @@
 /// screen/list_destination.dart
 ///
 import 'package:flutter/material.dart';
-import 'package:travel_app/widget/account/profil_account.dart';
 import 'package:travel_app/widget/home/header_home.dart';
 import 'package:travel_app/widget/list_destination/list_item.dart';
 

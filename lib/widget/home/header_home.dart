@@ -11,7 +11,7 @@ Widget headerHome(BuildContext context, bool isAvatar) {
   NavigationProvider _navItem = Provider.of<NavigationProvider>(context, listen: false);
   return Container(
     height: 50,
-    margin: EdgeInsets.only(top: 15, left: 15, right: 15),
+    margin: EdgeInsets.only(top: 15, left: 15, right: 15, bottom: 15),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[

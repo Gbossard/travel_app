@@ -32,25 +32,27 @@ class _DestinationDetailState extends State<DestinationDetail> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height,
-                    child: ListView(
-                      primary: false,
-                      physics: BouncingScrollPhysics(),
-                      controller: _pageController,
-                      scrollDirection: Axis.horizontal,
-                      children: <Widget>[
-                        for (var destinationImage in widget.destination.images)
-                        Container(
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: NetworkImage(destinationImage)
-                            ),
+                    height: MediaQuery.of(context).size.height,                    
+                      child: ListView(
+                        primary: false,
+                        physics: BouncingScrollPhysics(),
+                        controller: _pageController,
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          for (var destinationImage in widget.destination.images)
+                          Container(
+                            width: double.infinity,
+                            
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: NetworkImage(destinationImage)
+                              ),
+                            )
                           )
-                        )
-                      ],                    
-                    ),
+                        ],                    
+                      ),
+                    
                   ),
                 ],
               ),
