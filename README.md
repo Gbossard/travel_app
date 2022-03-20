@@ -14,3 +14,10 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Diffcultés rencontrées
+Le plus dur a été niveau design, j'ai essayé de créer un design plus personnalisé. 
+J'ai été trop ambitieuse sur le projet que je souhaitais réaliser au départ. 
+
+## Evolutions
+Créer des catégories, des filtres, une page de favoris, des liens sur la popup de la map. 

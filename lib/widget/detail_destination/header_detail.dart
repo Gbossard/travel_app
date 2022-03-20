@@ -10,7 +10,7 @@ Widget headerDetail(BuildContext context) {
   return SafeArea(
     child: Container(
       height: 50,
-      margin: EdgeInsets.only(top: 15, left: 15, right: 15),
+      margin: EdgeInsets.only(top: 15, left: 5, right: 5),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
